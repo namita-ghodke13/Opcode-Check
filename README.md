@@ -22,7 +22,7 @@ Code Files:
   - "opcode_reader.h"
   - "opcode_reader.c"
 
-GitHub: [https://github.com/namita-ghodke13]
+GitHub: https://github.com/namita-ghodke13
 
 
 2. Shital Dudhade — Operand Handling
