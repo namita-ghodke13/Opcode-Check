@@ -1,0 +1,35 @@
+ADD    01 /r       2    r/m      r     Yes      r      No
+ADD    03 /r       2     r      r/m    Yes      r      No
+ADD    05 id       2    EAX     imm    No      -1      No
+ADD    81 /0 id    2    r/m     imm    Yes     000     No
+AND    21 /r       2    r/m      r     Yes      r      No
+AND    23 /r       2     r      r/m    Yes      r      No
+AND    25 id       2    EAX     imm    No      -1      No
+AND    81 /4 id    2    r/m     imm    Yes     100     No
+CMP    39 /r       2    r/m      r     Yes      r      No
+CMP    3B /r       2     r      r/m    Yes      r      No
+CMP    3D id       2    EAX     imm    No      -1      No
+CMP    81 /7 id    2    r/m     imm    Yes     111     No
+DEC    FF /1       1    r/m      -     Yes     001     No
+DEC    48+rd       1     r       -     No      -1      Yes
+DIV    F7 /6       1    r/m      -     Yes     110     No
+INC    FF /0       1    r/m      -     Yes     000     No
+INC    40+rd       1     r       -     No      -1      Yes
+MOV    89 /r       2    r/m      r     Yes      r      No
+MOV    8B /r       2     r      r/m    Yes      r      No
+MOV    C7 /0 id    2    r/m     imm    Yes     000     No
+MOV    B8+rd id    2     r      imm    No      -1      Yes
+MUL    F7 /4       1    r/m      -     Yes     100     No
+OR     09 /r       2    r/m      r     Yes      r      No
+OR     0B /r       2     r      r/m    Yes      r      No
+OR     0D id       2    EAX     imm    No      -1      No
+OR     81 /1 id    2    r/m     imm    Yes     001     No
+SUB    29 /r       2    r/m      r     Yes      r      No
+SUB    2B /r       2     r      r/m    Yes      r      No
+SUB    2D id       2    EAX     imm    No      -1      No
+SUB    81 /5 id    2    r/m     imm    Yes     101     No
+XOR    31 /r       2    r/m      r     Yes      r      No
+XOR    33 /r       2     r      r/m    Yes      r      No
+XOR    35 id       2    EAX     imm    No      -1      No
+XOR    81 /6 id    2    r/m     imm    Yes     110     No
+               
