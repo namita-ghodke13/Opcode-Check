@@ -1,0 +1,295 @@
+Filename: parser.h
+
+Description:
+
+ *parser.h   header file for the parser module of the Netwide
+ *           Assembler
+ 
+----------------------------------------
+
+Filename: rdstrnum.c
+
+Description:
+
+ *rdstrnum.c
+ * *This converts a NASM string to an integer, used when a string
+ *is used in an integer constant context.  This is a binary conversion,
+ *not a conversion from a numeric constant in text form.
+ 
+----------------------------------------
+
+Filename: strfunc.c
+
+Description:
+
+ *strfunc.c
+ * *String transformation functions
+ 
+----------------------------------------
+
+Filename: nasm.h
+
+Description:
+ This should match enum strfunc in nasm.h 
+----------------------------------------
+
+Filename: preproc.c
+
+Description:
+
+ *preproc.c   macro preprocessor for the Netwide Assembler
+ 
+----------------------------------------
+
+Filename: nasm.h
+
+Description:
+
+ *Condition codes. Note that we use c_ prefix not C_ because C_ is
+ *used in nasm.h for the "real" condition codes. At _this_ level,
+ *we treat CXZ and ECXZ as condition codes, albeit non-invertible
+ *ones, so we need a different enum...
+ 
+----------------------------------------
+
+Filename: macros.c
+
+Description:
+
+ *The standard macro set: defined in macros.c in a set of arrays.
+ *This gives our position in any macro set, while we are processing it.
+ *The stdmacset is an array of such macro sets.
+ 
+----------------------------------------
+
+Filename: asm/quote.c
+
+Description:
+
+ *Common version for any kind of quoted string; see asm/quote.c for
+ *information about the arguments.
+ 
+----------------------------------------
+
+Filename: stdscan.h
+
+Description:
+
+ *stdscan.h	header file for stdscan.c
+ 
+----------------------------------------
+
+Filename: assemble.c
+
+Description:
+
+ *assemble.c   code generation for the Netwide Assembler
+ * *The entry points to this module are insn_size() for the non-final
+ *passes, and assemble() for the final pass.
+ 
+----------------------------------------
+
+Filename: asm/nasm.c.
+
+Description:
+
+ *This is the main entry point to this module, called from asm/nasm.c.
+ 
+----------------------------------------
+
+Filename: parser.c
+
+Description:
+
+ *parser.c   source line parser for the Netwide Assembler
+ 
+----------------------------------------
+
+Filename: assemble.c:
+
+Description:
+ negative values handled in assemble.c: process_insn() 
+----------------------------------------
+
+Filename: eval.h
+
+Description:
+
+ *eval.h   header file for eval.c
+ 
+----------------------------------------
+
+Filename: listing.c
+
+Description:
+
+ *listing.c    listing file generator for the Netwide Assembler
+ 
+----------------------------------------
+
+Filename: listing.h
+
+Description:
+
+ *listing.h   header file for listing.c
+ 
+----------------------------------------
+
+Filename: preproc.h
+
+Description:
+
+ *preproc.h  header file for preproc.c
+ 
+----------------------------------------
+
+Filename: labels.c
+
+Description:
+
+ *labels.c  label handling for the Netwide Assembler
+ 
+----------------------------------------
+
+Filename: exprdump.c
+
+Description:
+
+ *exprdump.c
+ * *Debugging code to dump the contents of an expression vector to stdout
+ 
+----------------------------------------
+
+Filename: float.c
+
+Description:
+
+ *float.c     floating-point constant support for the Netwide Assembler
+ 
+----------------------------------------
+
+Filename: include/nasm.h.
+
+Description:
+
+ *The 16- and 128-bit formats are expected to be in IEEE 754r.
+ *AMD SSE5 uses the 16-bit format.
+ * *The 32- and 64-bit formats are the original IEEE 754 formats.
+ * *The 80-bit format is x87-specific, but widely used.
+ * *The 8-bit format appears to be the consensus 8-bit floating-point
+ *format.  It is apparently used in graphics applications.
+ * *The b16 format is a 16-bit format with smaller mantissa and larger
+ *exponent field.  It is effectively a truncated version of the standard
+ *IEEE 32-bit (single) format, but is explicitly supported here in
+ *order to support proper rounding.
+ * *This array must correspond to enum floatize in include/nasm.h.
+ *Note that there are some formats which have more than one enum;
+ *both need to be listed here with the appropriate offset into the
+ *floating-point byte array (use for the floatize operators.)
+ * *FLOAT_ERR is a value that both represents "invalid format" and the
+ *size of this array.
+ 
+----------------------------------------
+
+Filename: eval.c
+
+Description:
+
+ *eval.c    expression evaluator for the Netwide Assembler
+ 
+----------------------------------------
+
+Filename: assemble.h
+
+Description:
+
+ *assemble.h - header file for stuff private to the assembler
+ 
+----------------------------------------
+
+Filename: nasm.h
+
+Description:
+ The order here must match enum nasm_limit in nasm.h 
+----------------------------------------
+
+Filename: floats.h
+
+Description:
+
+ *floats.h   header file for the floating-point constant module of
+ *      the Netwide Assembler
+ 
+----------------------------------------
+
+Filename: nasm.h
+
+Description:
+ Note: enum floatize and FLOAT_ERR are defined in nasm.h 
+----------------------------------------
+
+Filename: error.c
+
+Description:
+
+ *error.c - error message handling routines for the assembler
+ 
+----------------------------------------
+
+Filename: zlib.h
+
+Description:
+
+ *This needs to be in a separate file because zlib.h conflicts
+ *with opflags.h.
+ 
+----------------------------------------
+
+Filename: quote.c
+
+Description:
+
+ *quote.c
+ 
+----------------------------------------
+
+Filename: srcfile.c
+
+Description:
+
+ *srcfile.c - keep track of the current position in the input stream.
+ * *This is used for error messages, listing, and debug information. In
+ *both cases we also want to understand where inside a non-nolist
+ *macro we may be.
+ * *This hierarchy is a stack that is kept as a doubly-linked list, as
+ *we want to traverse it in either top-down order or bottom-up.
+ 
+----------------------------------------
+
+Filename: exprlib.c
+
+Description:
+
+ *exprlib.c
+ * *Library routines to manipulate expression data types.
+ 
+----------------------------------------
+
+Filename: nasmlib.c
+
+Description:
+
+ *nasmlib.c	library routines for the Netwide Assembler
+ 
+----------------------------------------
+
+Filename: parser.c
+
+Description:
+
+ *Standard scanner routine used by parser.c and some output
+ *formats. It keeps a succession of temporary-storage strings in
+ *stdscan_tempstorage, which can be cleared using stdscan_reset.
+ 
+----------------------------------------
+
