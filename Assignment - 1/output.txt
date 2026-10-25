@@ -1,0 +1,18 @@
+Program Name		Description
+--------------------------------------------------------------------
+strfunc.c            : 
+assemble.c           : code generation for the Netwide Assembler
+quote.c              : 
+parser.c             : source line parser for the Netwide Assembler
+float.c              : floating-point constant support for the Netwide Assembler
+nasmlib.c            : library routines for the Netwide Assembler
+labels.c             : label handling for the Netwide Assembler
+Standard sner routine used by by parser.c : and some output
+exprlib.c            : 
+error.c              : - error message handling routines for the assembler
+exprdump.c           : 
+preproc.c            : macro preprocessor for the Netwide Assembler
+eval.c               : expression evaluator for the Netwide Assembler
+listing.c            : listing file generator for the Netwide Assembler
+rdstrnum.c           : 
+srcfile.c            : - keep track of the current position in the input stream.
